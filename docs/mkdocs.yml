@@ -1,0 +1,33 @@
+site_name: Exact Capture Documentation
+site_url: http://exact-capture.io
+theme:
+  name: readthedocs
+  highlightjs: true
+
+docs_dir: src
+
+nav:
+- Exact Capture:
+  - Introduction: index.md
+  - Installation: install.md
+  - Quick Start: quick.md
+  - Server Requirements: server.md
+  - Configuration Guide: config.md
+  - Performance Tuning: tuning.md
+  - Output Format (expcap): expcap.md
+  - Internal Architecture: arch.md
+- Tools:
+  - Overview: tools/overview.md
+  - Exact PCAP Extract: tools/extract.md
+  - Exact PCAP Modify: tools/modify.md
+  - Exact PCAP Match: tools/match.md
+  - Exact PCAP Parse: tools/parse.md
+  - Exact PCAP Analyze: tools/analyze.md
+- Version History: versions.md
+
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.fenced_code
+
+plugins:
+  - search
